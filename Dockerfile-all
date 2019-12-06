@@ -1,3 +1,2 @@
 FROM theasp/fluentd-plugins:common
-COPY build.bash /build.bash
 RUN /build.bash all
