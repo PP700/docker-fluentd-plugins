@@ -24,7 +24,7 @@ sed -r -i -e 's! main! main contrib non-free!g' /etc/apt/sources.list
 
 apt-get update -q
 apt-get install -qy --no-install-recommends $BUILD_DEPS
-gem install pg
+gem install pg -v 1.0.0
 
 if ! curl -s https://www.fluentd.org/plugins \
     | grep '^  var plugins' \
